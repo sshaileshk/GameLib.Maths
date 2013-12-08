@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03887030-FBFC-4878-BD46-1646BC3EDEE1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameLib.Maths</RootNamespace>
+    <AssemblyName>GameLib.Maths</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BoundingBox.cs" />
+    <Compile Include="BoundingFrustum.cs" />
+    <Compile Include="BoundingSphere.cs" />
+    <Compile Include="ContainmentType.cs" />
+    <Compile Include="MathHelper.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="Plane.cs" />
+    <Compile Include="PlaneIntersectionType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quaternion.cs" />
+    <Compile Include="Ray.cs" />
+    <Compile Include="Shapes2D\CircleShape.cs" />
+    <Compile Include="Shapes2D\Collision.cs" />
+    <Compile Include="Shapes2D\EdgeShape.cs" />
+    <Compile Include="Shapes2D\LineTools.cs" />
+    <Compile Include="Shapes2D\LoopShape.cs" />
+    <Compile Include="Shapes2D\Math.cs" />
+    <Compile Include="Shapes2D\PolygonShape.cs" />
+    <Compile Include="Shapes2D\PolygonTools.cs" />
+    <Compile Include="Shapes2D\Shape.cs" />
+    <Compile Include="Shapes2D\Vertices.cs" />
+    <Compile Include="Vector2.cs" />
+    <Compile Include="Vector3.cs" />
+    <Compile Include="Vector4.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
