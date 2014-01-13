@@ -244,11 +244,11 @@ namespace GameLib.Maths
         public static float[] ToFloatArray(Matrix mat)
         {
             float[] matarray = {
-									mat.M11, mat.M12, mat.M13, mat.M14,
-									mat.M21, mat.M22, mat.M23, mat.M24,
-									mat.M31, mat.M32, mat.M33, mat.M34,
-									mat.M41, mat.M42, mat.M43, mat.M44
-								};
+                                    mat.M11, mat.M12, mat.M13, mat.M14,
+                                    mat.M21, mat.M22, mat.M23, mat.M24,
+                                    mat.M31, mat.M32, mat.M33, mat.M34,
+                                    mat.M41, mat.M42, mat.M43, mat.M44
+                                };
             return matarray;
         }
 
@@ -1309,8 +1309,8 @@ namespace GameLib.Maths
 
 
             /*
-			
-			
+            
+            
             ///
             // Use Laplace expansion theorem to calculate the inverse of a 4x4 matrix
             // 

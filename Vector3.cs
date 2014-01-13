@@ -550,6 +550,13 @@ namespace GameLib.Maths
                                  (position.X * matrix.M13) + (position.Y * matrix.M23) + (position.Z * matrix.M33) + matrix.M43);
         }
 
+        public static void Transform(ref Vector3 position, ref Matrix3x3 matrix, out Vector3 result)
+        {
+            result = new Vector3((position.X * matrix.M11) + (position.Y * matrix.M21) + (position.Z * matrix.M31),
+                                 (position.X * matrix.M12) + (position.Y * matrix.M22) + (position.Z * matrix.M32),
+                                 (position.X * matrix.M13) + (position.Y * matrix.M23) + (position.Z * matrix.M33));
+        }
+
         public static void Transform(Vector3[] sourceArray, ref Matrix matrix, Vector3[] destinationArray)
         {
             Debug.Assert(destinationArray.Length >= sourceArray.Length, "The destination array is smaller than the source array.");

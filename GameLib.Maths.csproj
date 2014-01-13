@@ -42,6 +42,7 @@
     <Compile Include="ContainmentType.cs" />
     <Compile Include="MathHelper.cs" />
     <Compile Include="Matrix.cs" />
+    <Compile Include="Matrix3x3.cs" />
     <Compile Include="Plane.cs" />
     <Compile Include="PlaneIntersectionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,6 +58,8 @@
     <Compile Include="Shapes2D\PolygonTools.cs" />
     <Compile Include="Shapes2D\Shape.cs" />
     <Compile Include="Shapes2D\Vertices.cs" />
+    <Compile Include="Shapes3D\BoxShape3D.cs" />
+    <Compile Include="Shapes3D\Shape3D.cs" />
     <Compile Include="Vector2.cs" />
     <Compile Include="Vector3.cs" />
     <Compile Include="Vector4.cs" />
